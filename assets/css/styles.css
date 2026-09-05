@@ -221,7 +221,8 @@ select {
 
 @media (max-width: 600px) {
   .top {
-    padding-top: 30;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 }
 .top__left {
@@ -338,18 +339,18 @@ section {
   margin: 0;
 }
 section p {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 section p a {
   text-decoration: underline;
 }
 section hr {
   border: none;
-  height: 160px;
+  height: 120px;
 }
 @media (max-width: 600px) {
   section hr {
-    height: 80px;
+    height: 40px;
   }
 }
 
@@ -368,7 +369,7 @@ div.boxed h2 {
 }
 div.boxed h2 {
   margin-top: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 div.boxed blockquote {
   font-size: 1rem;
