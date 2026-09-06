@@ -98,6 +98,11 @@ body {
     width: calc(100% - 80px);
   }
 }
+@media (max-width: 600px) {
+  .bio-section, .site-footer, div.boxed, .eyebrow, .top {
+    width: calc(100% - 40px);
+  }
+}
 .overview {
   width: 100%;
   max-width: 800px;
@@ -274,20 +279,38 @@ select {
   transition: color 0.1s ease-out, border-color 0.1s ease-out;
 }
 .top__cta {
-  padding: 4px 16px;
+  padding: 5px 16px;
   border-radius: 999px;
   font-size: 1rem;
   text-decoration: none;
   display: inline-flex;
-  transition: color 0.3s;
+  transition: color 0.3s, padding 0.3s;
 }
+
+.top__cta:hover {
+  padding: 5px 20px;
+  
+
+}
+
+
 .top__cta .arrow {
   display: inline-block;
   transition: transform 0.3s ease;
   margin-left: 0.25em;
 }
 .top__cta:hover .arrow {
-  transform: translateX(3px);
+  transform: translateX(5px);
+}
+
+.cta-project .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-left: 0.25em;
+}
+
+.cta-project:hover .arrow {
+  transform: translateX(1px);
 }
 
 
@@ -328,6 +351,8 @@ select {
 @media (max-width: 600px) {
   .overview {
     text-align: left;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
   }
 }
 
@@ -464,7 +489,7 @@ a.cta-project {
   text-decoration: none;
   border: 1px solid;
   border-radius: 999px;
-  padding: 6px 10px;
+  padding: 6px 14px;
   transition: color 0.2s ease-in, border-color 0.2s ease-in;
 }
 a.cta-project:hover {
